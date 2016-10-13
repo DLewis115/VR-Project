@@ -1,14 +1,18 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-
+Project("{97BE5FB1-CF3A-ABE8-D4BD-1E0301BA3B4E}") = "NASA_VR", "Assembly-CSharp.csproj", "{CA3A8259-FE65-EC21-74C1-BFD87495A891}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{CA3A8259-FE65-EC21-74C1-BFD87495A891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA3A8259-FE65-EC21-74C1-BFD87495A891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA3A8259-FE65-EC21-74C1-BFD87495A891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA3A8259-FE65-EC21-74C1-BFD87495A891}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

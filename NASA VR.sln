@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{A45EE073-98B5-4EA5-49C2-9F4D9279BF80}") = "NASA VR", "Assembly-CSharp-firstpass.csproj", "{AF842E0A-C94A-D9CF-5A4F-F6A111F47143}"
+EndProject
 Project("{A45EE073-98B5-4EA5-49C2-9F4D9279BF80}") = "NASA VR", "Assembly-CSharp.csproj", "{DD7EA530-C861-966B-1F4F-C9C9F8618D60}"
 EndProject
 Project("{A45EE073-98B5-4EA5-49C2-9F4D9279BF80}") = "NASA VR", "Assembly-CSharp-Editor.csproj", "{6FCEFCDE-28B6-3373-FFC3-C82992D5926D}"
@@ -11,6 +13,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF842E0A-C94A-D9CF-5A4F-F6A111F47143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF842E0A-C94A-D9CF-5A4F-F6A111F47143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF842E0A-C94A-D9CF-5A4F-F6A111F47143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF842E0A-C94A-D9CF-5A4F-F6A111F47143}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DD7EA530-C861-966B-1F4F-C9C9F8618D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DD7EA530-C861-966B-1F4F-C9C9F8618D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD7EA530-C861-966B-1F4F-C9C9F8618D60}.Release|Any CPU.ActiveCfg = Release|Any CPU

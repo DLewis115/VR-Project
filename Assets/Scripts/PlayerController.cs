@@ -3,24 +3,23 @@ using System.Collections;
 
 public class PlayerController: MonoBehaviour {
 
-    public float speed;
+    public float rotDegrees;
+    public float totalDegrees;
     public float rotSpeed;
 
-	private Rigidbody rb;
+    private Quaternion targetRotation;
 
 	// Use this for initialization
 	void Start () {
-		rb = GetComponent<Rigidbody> ();
+        targetRotation = transform.rotation;
 	}
 
-	void FixedUpdate ()
+	void Update ()
 	{
-        float horizontal = speed * Input.GetAxis("Horizontal") * Time.deltaTime;
-        float vertical = speed * Input.GetAxis("Vertical") * Time.deltaTime;
-        float rotX = Input.GetAxis("Mouse X") * rotSpeed * Mathf.Deg2Rad;
-
-        transform.Translate (horizontal, 0f, vertical);
-        transform.RotateAround(Vector3.up, rotX);
-
+        if (Input.GetKeyDown (KeyCode.Space))
+        {
+            targetRotation *= Quaternion.AngleAxis(rotDegrees, Vector3.up);
+        }
+        transform.rotation = Quaternion.Lerp(transform.rotation , targetRotation , 10 * rotSpeed * Time.deltaTime);
 	}
 }

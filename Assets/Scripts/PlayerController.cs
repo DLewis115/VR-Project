@@ -4,22 +4,42 @@ using System.Collections;
 public class PlayerController: MonoBehaviour {
 
     public float rotDegrees;
-    public float totalDegrees;
     public float rotSpeed;
 
-    private Quaternion targetRotation;
+    bool rotating = false;
+    bool rotated = false;
 
-	// Use this for initialization
-	void Start () {
-        targetRotation = transform.rotation;
-	}
+    Vector3 axis = Vector3.right;
 
-	void Update ()
+    void Update ()
 	{
-        if (Input.GetKeyDown (KeyCode.Space))
+        if (!rotating && Input.GetKeyDown (KeyCode.Space))
         {
-            targetRotation *= Quaternion.AngleAxis(rotDegrees, Vector3.right);
+            StartCoroutine(Rotate(rotDegrees, axis, rotSpeed));
         }
-        transform.rotation = Quaternion.Lerp(transform.rotation , targetRotation , 10 * rotSpeed * Time.deltaTime);
+        if (!rotating && rotated)
+        {
+            float rot = 0 - rotDegrees;
+            StartCoroutine(Rotate(rot, axis, rotSpeed));
+        }
 	}
+
+    IEnumerator Rotate( float angle, Vector3 axis, float speed)
+    {
+        rotating = true;
+        Quaternion start = transform.rotation;
+
+        float curAngle = 0.0f;
+
+        while (Mathf.Abs (curAngle - angle) > 0.0001f)
+        {
+            curAngle = Mathf.MoveTowards(curAngle, angle, Time.deltaTime * rotSpeed);
+            transform.rotation = Quaternion.AngleAxis(curAngle, axis) * start;
+            yield return null;
+        }
+
+        transform.rotation = Quaternion.AngleAxis(angle, axis) * start;
+        rotating = false;
+        rotated = !rotated;
+    }
 }

@@ -18,7 +18,7 @@ public class PlayerController: MonoBehaviour {
 	{
         if (Input.GetKeyDown (KeyCode.Space))
         {
-            targetRotation *= Quaternion.AngleAxis(rotDegrees, Vector3.up);
+            targetRotation *= Quaternion.AngleAxis(rotDegrees, Vector3.right);
         }
         transform.rotation = Quaternion.Lerp(transform.rotation , targetRotation , 10 * rotSpeed * Time.deltaTime);
 	}

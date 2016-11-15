@@ -8,12 +8,13 @@ public class PlayerController: MonoBehaviour {
 
     bool rotating = false;
     bool rotated = false;
+    bool executeRot = false;
 
     Vector3 axis = Vector3.right;
 
     void Update ()
 	{
-        if (!rotating && Input.GetKeyDown (KeyCode.Space))
+        if (!rotating && executeRot)
         {
             StartCoroutine(Rotate(rotDegrees, axis, rotSpeed));
         }
@@ -27,6 +28,7 @@ public class PlayerController: MonoBehaviour {
     IEnumerator Rotate( float angle, Vector3 axis, float speed)
     {
         rotating = true;
+        executeRot = false;
         Quaternion start = transform.rotation;
 
         float curAngle = 0.0f;
@@ -41,5 +43,20 @@ public class PlayerController: MonoBehaviour {
         transform.rotation = Quaternion.AngleAxis(angle, axis) * start;
         rotating = false;
         rotated = !rotated;
+    }
+
+    public void setSpeed(float newSpeed)
+    {
+        rotSpeed = newSpeed;
+    }
+
+    public void setDegree(float newDegree)
+    {
+        rotDegrees = newDegree;
+    }
+
+    public void execute()
+    {
+        executeRot = true;
     }
 }

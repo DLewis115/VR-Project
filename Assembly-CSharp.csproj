@@ -86,6 +86,7 @@
      <Compile Include="Assets\OutPost\Image Effects (Pro Only)\GlowEffect.cs" />
      <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\SliderSynchro.cs" />
      <Compile Include="Assets\Scripts\WorldGeneration.cs" />
      <Compile Include="Assets\Scripts\sliderController.cs" />
      <None Include="Assets\NatureStarterKit2\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />

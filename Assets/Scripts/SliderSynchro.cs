@@ -4,24 +4,23 @@ using UnityEngine.UI;
 
 public class SliderSynchro : MonoBehaviour {
 
-    public Slider slider;
-    public Text text;
-    public string unit;
-    public byte decimals = 2;
+	private UnityEngine.UI.Slider my_slider;
+	private UnityEngine.UI.InputField my_field;
 
-    void OnEnable()
-    {
-        slider.onValueChanged.AddListener(ChangeValue);
-        ChangeValue(slider.value);
-    }
+	void Start() {
+		my_slider = gameObject.GetComponent<UnityEngine.UI.Slider>();
+		my_field = gameObject.GetComponent<UnityEngine.UI.InputField>();
+	}
 
-    void OnDisable()
-    {
-        slider.onValueChanged.RemoveAllListeners();
-    }
+	public void UpdateValueFromFloat(float value) {
+		Debug.Log("float value changed: " + value);
+		if (my_slider) { my_slider.value = value; }
+		if (my_field) { my_field.text = value.ToString(); }
+	}
 
-	void ChangeValue(float value)
-    {
-        text.text = value.ToString("n" + decimals) + " " + unit;
-    }
+	public void UpdateValueFromString(string value) {
+		Debug.Log("string value changed: " + value);
+		if (my_slider) { my_slider.value = float.Parse(value); }
+		if (my_field) { my_field.text = value; }
+	}
 }

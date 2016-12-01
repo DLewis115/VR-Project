@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{AF9E6166-57F5-ED8F-59D5-CF16696F5516}") = "NASAVR", "Assembly-CSharp-firstpass.csproj", "{305209EA-9EB5-C23B-6D19-5084E65D03C4}"
+EndProject
+Project("{AF9E6166-57F5-ED8F-59D5-CF16696F5516}") = "NASAVR", "Assembly-CSharp.csproj", "{23F1D60E-21A3-FCC0-3EF7-5A9BC751AEE2}"
+EndProject
+Project("{AF9E6166-57F5-ED8F-59D5-CF16696F5516}") = "NASAVR", "Assembly-CSharp-Editor.csproj", "{14BAF802-C505-F7CB-FED6-B7B46DCF09A2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{305209EA-9EB5-C23B-6D19-5084E65D03C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{305209EA-9EB5-C23B-6D19-5084E65D03C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{305209EA-9EB5-C23B-6D19-5084E65D03C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{305209EA-9EB5-C23B-6D19-5084E65D03C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23F1D60E-21A3-FCC0-3EF7-5A9BC751AEE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F1D60E-21A3-FCC0-3EF7-5A9BC751AEE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F1D60E-21A3-FCC0-3EF7-5A9BC751AEE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F1D60E-21A3-FCC0-3EF7-5A9BC751AEE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14BAF802-C505-F7CB-FED6-B7B46DCF09A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BAF802-C505-F7CB-FED6-B7B46DCF09A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BAF802-C505-F7CB-FED6-B7B46DCF09A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BAF802-C505-F7CB-FED6-B7B46DCF09A2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

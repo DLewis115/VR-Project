@@ -6,12 +6,13 @@ public class WorldGeneration : MonoBehaviour {
     public GameObject[] blocks = new GameObject[4];
     const float BlockLength = 348f;
 
+    private UnityEngine.UI.InputField my_field;
     public float moveSpeed;
 
 	// Use this for initialization
 	void Start () {
-	
-	}
+        my_field = gameObject.GetComponent<UnityEngine.UI.InputField>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -26,4 +27,9 @@ public class WorldGeneration : MonoBehaviour {
             block.transform.position = newBlockPos;
         }
 	}
+
+    public void setSpeed(string newSpeed)
+    {
+        moveSpeed = float.Parse(newSpeed);
+    }
 }

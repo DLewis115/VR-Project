@@ -84,8 +84,6 @@
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\VignetteAndChromaticAberration.cs" />
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
      <Compile Include="Assets\OutPost\Image Effects (Pro Only)\GlowEffect.cs" />
-     <Compile Include="Assets\Scripts\ButtonSynchro.cs" />
-     <Compile Include="Assets\Scripts\CameraController.cs" />
      <Compile Include="Assets\Scripts\DisableOVRMirroring.cs" />
      <Compile Include="Assets\Scripts\MultiDisplay.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />

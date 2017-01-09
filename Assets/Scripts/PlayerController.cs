@@ -5,6 +5,7 @@ public class PlayerController: MonoBehaviour {
 
     public float rotDegrees;
     public float rotSpeed;
+    public float waitTime;
 
     bool rotating = false;
     bool rotated = false;
@@ -41,6 +42,7 @@ public class PlayerController: MonoBehaviour {
         }
 
         transform.rotation = Quaternion.AngleAxis(angle, axis) * start;
+        yield return new WaitForSeconds(waitTime);
         rotating = false;
         rotated = !rotated;
     }
@@ -53,6 +55,11 @@ public class PlayerController: MonoBehaviour {
     public void setDegree(float newDegree)
     {
         rotDegrees = newDegree;
+    }
+
+    public void setWaitTime(float newTime)
+    {
+        waitTime = newTime/5;
     }
 
     public void execute()

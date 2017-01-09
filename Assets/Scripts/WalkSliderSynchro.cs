@@ -18,11 +18,11 @@ public class WalkSliderSynchro : MonoBehaviour
     {
         if (Input.GetKey("down"))
         {
-            my_slider.value = my_slider.value - 0.1F;
+            my_slider.value = my_slider.value - 1F;
         }
         else if (Input.GetKey("up"))
         {
-            my_slider.value = my_slider.value + 0.1F;
+            my_slider.value = my_slider.value + 1F;
         }
     }
 

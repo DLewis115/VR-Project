@@ -28,18 +28,8 @@ public class WorldGeneration : MonoBehaviour {
         }
 	}
 
-    public void setSpeed(string newSpeed)
+    public void setSpeed(float newSpeed)
     {
-        moveSpeed = float.Parse(newSpeed);
-    }
-
-    public void increaseSpeed()
-    {
-        moveSpeed = moveSpeed + 0.1f;
-    }
-
-    public void decreaseSpeed()
-    {
-        moveSpeed = moveSpeed - 0.1f;
+        moveSpeed = newSpeed/10;
     }
 }

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_scenes/City.unity
+- path: Assets/_scenes/Moon_scene.unity
   isLoaded: 1
   isActive: 1

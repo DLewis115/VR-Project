@@ -21,3 +21,26 @@ C:\Users\dlewi\Documents\NASA VR\Temp\bin\Debug\UnityEngine.Networking.xml
 C:\Users\dlewi\Documents\NASA VR\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
 C:\Users\dlewi\Documents\NASA VR\obj\Debug\Assembly-CSharp.dll
 C:\Users\dlewi\Documents\NASA VR\obj\Debug\Assembly-CSharp.pdb
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\Assembly-UnityScript-firstpass.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\UnityEditor.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\UnityEngine.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\UnityEngine.xml
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\UnityEditor.xml
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\dlewi\Documents\NASAVR\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\dlewi\Documents\NASAVR\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\dlewi\Documents\NASAVR\obj\Debug\Assembly-CSharp.dll
+C:\Users\dlewi\Documents\NASAVR\obj\Debug\Assembly-CSharp.pdb

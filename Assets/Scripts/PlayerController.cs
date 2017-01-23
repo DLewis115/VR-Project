@@ -26,22 +26,22 @@ public class PlayerController: MonoBehaviour {
         }
 	}
 
-    IEnumerator Rotate( float angle, Vector3 axis, float speed)
+    IEnumerator Rotate(float angle, Vector3 axis, float speed)
     {
         rotating = true;
         executeRot = false;
-        Quaternion start = transform.rotation;
+        Quaternion start = transform.localRotation;
 
         float curAngle = 0.0f;
 
         while (Mathf.Abs (curAngle - angle) > 0.0001f)
         {
             curAngle = Mathf.MoveTowards(curAngle, angle, Time.deltaTime * rotSpeed);
-            transform.rotation = Quaternion.AngleAxis(curAngle, axis) * start;
+            transform.localRotation = Quaternion.AngleAxis(curAngle, axis) * start;
             yield return null;
         }
 
-        transform.rotation = Quaternion.AngleAxis(angle, axis) * start;
+        transform.localRotation = Quaternion.AngleAxis(angle, axis) * start;
         yield return new WaitForSeconds(waitTime);
         rotating = false;
         rotated = !rotated;

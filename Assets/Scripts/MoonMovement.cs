@@ -20,7 +20,7 @@ public class MoonMovement : MonoBehaviour {
         distance += speed * Time.deltaTime;
         float perc = distance / pathLength;
         iTween.PutOnPath(gameObject, thePath, perc);
-        this.transform.LookAt(iTween.PointOnPath(thePath, perc + 0.01f));
+        this.transform.LookAt(iTween.PointOnPath(thePath, perc + 0.0009f));
         if (distance >= pathLength)
         {
             distance = 0;

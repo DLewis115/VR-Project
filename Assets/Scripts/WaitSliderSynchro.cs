@@ -16,7 +16,7 @@ public class WaitSliderSynchro : MonoBehaviour
 
     public void UpdateValueFromFloat(float value)
     {
-        float copy = value / 2;
+        float copy = value / 10;
         Debug.Log("float value changed: " + value);
         if (my_slider) { my_slider.value = value; }
         if (my_field) { my_field.text = copy.ToString(); }
@@ -26,7 +26,7 @@ public class WaitSliderSynchro : MonoBehaviour
     {
         float copy = float.Parse(value);
         Debug.Log("string value changed: " + value);
-        if (my_slider) { my_slider.value = copy * 2; }
+        if (my_slider) { my_slider.value = copy * 10; }
         if (my_field) { my_field.text = value; }
     }
 }

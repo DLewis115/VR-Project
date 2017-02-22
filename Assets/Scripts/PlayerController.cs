@@ -59,7 +59,7 @@ public class PlayerController: MonoBehaviour {
 
     public void setWaitTime(float newTime)
     {
-        waitTime = newTime/2;
+        waitTime = newTime/10;
     }
 
     public void execute()

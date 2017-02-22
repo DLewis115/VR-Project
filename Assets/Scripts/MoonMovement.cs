@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+
 
 public class MoonMovement : MonoBehaviour {
 
@@ -9,10 +11,14 @@ public class MoonMovement : MonoBehaviour {
     private Vector3[] thePath;
     private float pathLength;
 
+    public Text myTimer;
+    public float startTime;
+
     void Start()
     {
         thePath = iTweenPath.GetPath("MoonMovement");
         pathLength = iTween.PathLength(thePath);
+        startTime = Time.time;
     }
 
     void Update()
@@ -27,6 +33,13 @@ public class MoonMovement : MonoBehaviour {
         {
             distance = 0;
         }
+
+        float t = Time.time - startTime;
+
+        string minutes = ((int)t / 60).ToString();
+        string seconds = (t % 60).ToString("f2");
+
+        myTimer.text = minutes + ":" + seconds;
     }
 
     public void setSpeed(float newSpeed)

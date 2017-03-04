@@ -1,20 +1,30 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
 public class PlayerController: MonoBehaviour {
 
     public float rotDegrees;
     public float rotSpeed;
     public float waitTime;
+    public float minTime;
+    public float maxTime;
 
     bool rotating = false;
     bool rotated = false;
     bool executeRot = false;
+    bool automate = false;
+    bool automated = false;
 
     Vector3 axis = Vector3.right;
 
     void Update ()
 	{
+        if (!automated && automate)
+        {
+            StartCoroutine(Automate(minTime, maxTime));
+        }
+
         if (!rotating && executeRot)
         {
             StartCoroutine(Rotate(rotDegrees, axis, rotSpeed));
@@ -47,6 +57,21 @@ public class PlayerController: MonoBehaviour {
         rotated = !rotated;
     }
 
+    IEnumerator Automate(float minTime, float maxTime)
+    {
+        automated = true;
+
+        while (automate)
+        {
+            rotDegrees = UnityEngine.Random.Range(-80, 80);
+            rotSpeed = UnityEngine.Random.Range(1, 180);
+            execute();
+            yield return new WaitForSeconds(waitTime + 5);
+        }
+
+        automated = false;
+    }
+
     public void setSpeed(float newSpeed)
     {
         rotSpeed = newSpeed;
@@ -60,6 +85,11 @@ public class PlayerController: MonoBehaviour {
     public void setWaitTime(float newTime)
     {
         waitTime = newTime/10;
+    }
+
+    public void setAutomate()
+    {
+        automate = !automate;
     }
 
     public void execute()

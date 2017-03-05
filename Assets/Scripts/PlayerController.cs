@@ -63,10 +63,11 @@ public class PlayerController: MonoBehaviour {
 
         while (automate)
         {
+            yield return new WaitForSeconds(UnityEngine.Random.Range(minTime, maxTime));
             rotDegrees = UnityEngine.Random.Range(-80, 80);
             rotSpeed = UnityEngine.Random.Range(1, 180);
             execute();
-            yield return new WaitForSeconds(waitTime + 5);
+            yield return new WaitForSeconds(waitTime);
         }
 
         automated = false;
@@ -85,6 +86,16 @@ public class PlayerController: MonoBehaviour {
     public void setWaitTime(float newTime)
     {
         waitTime = newTime/10;
+    }
+
+    public void setMinTime(String newTime)
+    {
+        minTime = float.Parse(newTime);
+    }
+
+    public void setMaxTime(String newTime)
+    {
+        maxTime = float.Parse(newTime);
     }
 
     public void setAutomate()

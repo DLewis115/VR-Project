@@ -861,6 +861,7 @@ GameObject:
   - 114: {fileID: 102380636}
   - 114: {fileID: 102380635}
   - 114: {fileID: 102380634}
+  - 114: {fileID: 102380638}
   m_Layer: 5
   m_Name: InputFieldRotateDegrees
   m_TagString: Untagged
@@ -1006,6 +1007,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 102380632}
+--- !u!114 &102380638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102380632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c068c87df9e27574fbed2d4e123a3554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &125943672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,6 +1281,7 @@ GameObject:
   - 222: {fileID: 180340000}
   - 114: {fileID: 180339999}
   - 114: {fileID: 180339998}
+  - 114: {fileID: 180339997}
   m_Layer: 5
   m_Name: InputMinTime
   m_TagString: Untagged
@@ -1296,6 +1309,17 @@ RectTransform:
   m_AnchoredPosition: {x: -571.5, y: -502}
   m_SizeDelta: {x: 100, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &180339997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 180339995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c068c87df9e27574fbed2d4e123a3554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &180339998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1626,9 +1650,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '5
-
-'
+  m_Text: 10
 --- !u!222 &234191816
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4187,6 +4209,7 @@ GameObject:
   - 114: {fileID: 647111169}
   - 114: {fileID: 647111168}
   - 114: {fileID: 647111167}
+  - 114: {fileID: 647111171}
   m_Layer: 5
   m_Name: InputFieldWaitTime
   m_TagString: Untagged
@@ -4332,6 +4355,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 647111165}
+--- !u!114 &647111171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 647111165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c068c87df9e27574fbed2d4e123a3554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &703636998
 GameObject:
   m_ObjectHideFlags: 0
@@ -4763,9 +4797,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '3
-
-'
+  m_Text: 7
 --- !u!222 &749910046
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4784,6 +4816,7 @@ GameObject:
   - 114: {fileID: 760685015}
   - 114: {fileID: 760685014}
   - 114: {fileID: 760685013}
+  - 114: {fileID: 760685017}
   m_Layer: 5
   m_Name: InputFieldRotateSpeed
   m_TagString: Untagged
@@ -4929,6 +4962,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 760685011}
+--- !u!114 &760685017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 760685011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c068c87df9e27574fbed2d4e123a3554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &770928160
 GameObject:
   m_ObjectHideFlags: 0
@@ -5137,8 +5181,8 @@ MonoBehaviour:
   rotDegrees: 15
   rotSpeed: 30
   waitTime: 0
-  minTime: 3
-  maxTime: 5
+  minTime: 7
+  maxTime: 10
 --- !u!1 &866286943
 GameObject:
   m_ObjectHideFlags: 0
@@ -6107,6 +6151,7 @@ GameObject:
   - 222: {fileID: 1303975299}
   - 114: {fileID: 1303975298}
   - 114: {fileID: 1303975297}
+  - 114: {fileID: 1303975296}
   m_Layer: 5
   m_Name: InputMaxTime
   m_TagString: Untagged
@@ -6134,6 +6179,17 @@ RectTransform:
   m_AnchoredPosition: {x: -418, y: -502}
   m_SizeDelta: {x: 100, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1303975296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1303975294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c068c87df9e27574fbed2d4e123a3554, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1303975297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6861,8 +6917,8 @@ RectTransform:
   m_RootOrder: 20
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -491, y: -502}
-  m_SizeDelta: {x: 61, y: 32}
+  m_AnchoredPosition: {x: -497, y: -502}
+  m_SizeDelta: {x: 80, y: 33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1586976602
 MonoBehaviour:
@@ -6997,6 +7053,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 1619568016}
   - 114: {fileID: 1619568017}
+  - 114: {fileID: 1619568018}
   m_Layer: 5
   m_Name: Toggle
   m_TagString: Untagged
@@ -7077,9 +7134,76 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 180339997}
+        m_MethodName: toggle
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1303975296}
+        m_MethodName: toggle
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 647111171}
+        m_MethodName: toggle
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 102380638}
+        m_MethodName: toggle
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 760685017}
+        m_MethodName: toggle
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0
+--- !u!114 &1619568018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1619568015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1184210157, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 0
 --- !u!1 &1649011901
 GameObject:
   m_ObjectHideFlags: 0

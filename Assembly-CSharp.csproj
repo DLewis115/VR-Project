@@ -85,6 +85,7 @@
      <Compile Include="Assets\NatureStarterKit2\Standard Assets\Effects\ImageEffects\Scripts\Vortex.cs" />
      <Compile Include="Assets\OutPost\Image Effects (Pro Only)\GlowEffect.cs" />
      <Compile Include="Assets\Pixelplacement\iTweenPath\iTweenPath.cs" />
+     <Compile Include="Assets\Scripts\AutomateSync.cs" />
      <Compile Include="Assets\Scripts\CloseProgram.cs" />
      <Compile Include="Assets\Scripts\DisableOVRMirroring.cs" />
      <Compile Include="Assets\Scripts\MoonMovement.cs" />

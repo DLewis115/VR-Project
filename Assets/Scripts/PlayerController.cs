@@ -47,7 +47,7 @@ public class PlayerController: MonoBehaviour {
 
         float curAngle = 0.0f;
 
-        while (Mathf.Abs (curAngle - angle) > 0.0001f)
+        while (Mathf.Abs (curAngle - angle) > 0.0000000001f)
         {
             curAngle = Mathf.MoveTowards(curAngle, angle, Time.deltaTime * rotSpeed);
             transform.localRotation = Quaternion.AngleAxis(curAngle, axis) * start;
@@ -62,19 +62,26 @@ public class PlayerController: MonoBehaviour {
 
     IEnumerator Automate(float minTime, float maxTime)
     {
+        if (minTime >= maxTime || minTime < 7.0f)
+            yield break;
         automated = true;
 
-        while (automate)
+        do
         {
             while (wait)
             {
                 yield return new WaitForSeconds(1);
             }
             yield return new WaitForSeconds(UnityEngine.Random.Range(minTime, maxTime));
-            rotDegrees = UnityEngine.Random.Range(-80, 80);
-            rotSpeed = UnityEngine.Random.Range(30, 180);
+            waitTime = UnityEngine.Random.Range(0.0f, 3.0f);
+            rotDegrees = UnityEngine.Random.Range(-80.0f, 80.0f);
+            while (rotDegrees == 0)
+            {
+                rotDegrees = UnityEngine.Random.Range(-80.0f, 80.0f);
+            }
+            rotSpeed = UnityEngine.Random.Range(30.0f, 180.0f);
             execute();
-        }
+        } while (automate);
 
         automated = false;
     }
